@@ -31,6 +31,15 @@ var originalFlavors = ["Banana Nut Fudge",
     "Vanilla Burnt Almond"
 ]
 
-for(let i = 2; i < originalFlavors.length; i++){
-    
+let newArray = [];
+
+function filterByWord(ogArr, str) {
+    for (let i = 0; i < ogArr.length; i++) {
+        if (ogArr[i].includes(str)) {
+            newArray.push(ogArr[i]);
+        }
+    }
+    return newArray;
 }
+filterbyWord(originalFlavors, 'Chocolate')
+console.log(newArray);
